@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM-project</title>
+
+    <!-- link to stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Oswald&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,300;1,200&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <div class="navbar">
+      <div class="logo">
+        <a href="index.html"
+          ><img src="assets/TERRACE - GRILL-logos_white.png" id="ashwa" alt=""
+        /></a>
+      </div>
+
+      <div class="search">
+        <input
+          type="search"
+          placeholder="search here"
+          style="text-align: center"
+        />
+      </div>
+
+      <div class="menu">
+        <a href=""><h1>HOME</h1> </a>
+        <a href=""><h1>PRODUCTS</h1></a>
+        <a href=""> <h1>SERVICES</h1> </a>
+        <a href=""> <h1>CONTACT</h1></a>
+      </div>
+
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </div>
+    <!-- hero -->
+
+    <div class="hero">
+      <div class="hero-image">
+        <div class="hero-text">
+          <p>
+            "Terrace-Grill Biryani: Where Tradition Meets Tantalizing Taste."
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- combine -->
+    <div class="combine">
+      <div class="personaldetails">
+        <h1 style="text-align: center">PERSONAL DETAILS</h1>
+        <form>
+          <div class="name">
+            <label for="name">name :</label>
+            <input
+              type="text"
+              class="personals"
+              id="name"
+              placeholder="Enter your name"
+            />
+          </div>
+          <div class="email">
+            <label for="email">email :</label>
+            <input
+              type="email"
+              class="personals"
+              id="email"
+              placeholder="Enter your email"
+            />
+          </div>
+          <div class="phonenumber">
+            <label for="phonenumber">phone number :</label>
+            <input
+              type="tel"
+              id="phonenumber"
+              placeholder="Enter your  number"
+              class="personals"
+            />
+          </div>
+        </form>
+      </div>
+      <!-- Fooditems -->
+      <div class="Fooditems">
+        <h1 style="text-align: center">BILL PAYMENT</h1>
+        <form>
+          <label for="sarters">starters</label>
+          <input type="text" id="sarters" placeholder=" Enter here" />
+          <label for="nonveg">non-veg</label>
+          <input type="text" id="biryani" placeholder=" Enter here" />
+          <label for="burgers">burgers</label>
+          <input type="text" id="burgers" placeholder=" Enter here" />
+          <label for="berverages">berverages</label>
+          <input type="text" id="berverages" placeholder=" Enter here" />
+        </form>
+      </div>
+      <!-- GST-Percentage -->
+      <div class="GST-details">
+        <form>
+          <label for="">Gst-Percentage</label>
+          <input type="number" id="gst" placeholder="18%" />
+        </form>
+      </div>
+      <!-- button -->
+      <button id="button" onclick="Mybill()">print</button>
+      <div id="para">
+        <div><p>your bill print will here!</p></div>
+      </div>
+      <hr class="line" />
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+      <div class="payments">
+        <div class="footer-details">
+          <a href=""><h1>LOCATION</h1></a>
+          <img src="/assets/map.png" alt="" />
+        </div>
+        <div class="footer-details" >
+          <a href=""><h1>DELIVERY</h1></a>
+          <img src="" alt="" />
+        </div>
+
+        <div class="footer-details" id="socialmedia">
+          <a href=""><h1>PRIVACY POLICY</h1></a>
+          <img src="assets/facebook.png" alt="" />
+          <img src="assets/instagram.png" alt="" />
+          <img src="/assets/gmail.png" alt="" />
+        </div>
+      </div>
+
+      <p>© 2017 TERRACE-GRILL Inc. All rights reserved.</p>
+
+    </div>
+
+    <!-- source to JS -->
+    <script src="/app.js"></script>
+  </body>
+</html>
