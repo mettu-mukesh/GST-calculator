@@ -108,7 +108,7 @@ body {
 
   100% {
     opacity: 1;
-    background-image: url(/assets/biryani2.png);
+    background-image: url("./assets/biryani2.png");
   }
 }
 
